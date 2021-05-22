@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap-4.6.0-dist/css/bootstrap.css"/>
+    <title>Lótus Engenharia</title>
+    <link rel="stylesheet" href="/css/formulario.css"/>
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+                <span class="navbar-toggler-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list text-white" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a class="navbar-brand ml-5" href="#"><img src="/imagens/logo.png" class="img-fluid" alt="logo LOTUS Engenharia" id="logolotus"/></a>
+                <ul class="navbar-nav navbar-static-top">
+                    <li class="nav-item mr-3">
+                        <a id="inicio" class="nav-link text-white" href="/index.html"><strong>INÍCIO</strong></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a id="quemsomos" class="nav-link text-white" href="quemsomos.html"><strong>QUEM SOMOS</strong></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                    <a id="servicos" class="nav-link text-white" href="servicos.html"><strong>SERVIÇOS</strong></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                    <a id="orcamento" class="nav-link text-white" href="/html/formulario.html"><strong>SOLICITE SEU ORÇAMENTO</strong></a>
+                    </li>
+                </ul>       
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Pesquise aqui..." aria-label="Search">
+                </form>
+            </div>
+        </div>
+      </nav>
+
+    <div class="container text-center">
+        <main>
+            <h1 class="mt-5 text-uppercase">Solicite seu orçamento</h1>
+            <p class="text-justify mt-4">Estamos à disposição para tirar as suas dúvidas e oferecer soluções, basta entrar em contato conosco:</p>
+            <p class="text-justify">Whatsapp: (85) 99981-8820 | E-mail: lotusengenharia.ce@gmail.com</p>
+            <p class="text-justify mb-5">Preencha o formulário abaixo para nos enviar uma mensagem ou solicitar o seu orçamento.</p>
+            <div class="row g-2">
+                <form class="col-md-6" data-toggle="validator" role="form">
+                    <h2>Pessoa Física</h2>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nome Completo" aria-label="Nome Completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="cpf" maxlength="14" placeholder="CPF" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="E-mail" aria-label="Email" data-error="Este email é inválido" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Telefone" atia-label="Telefone" pattern="([0-9]{2})([9])[0-9]{4,6}[0-9]{3,4}$" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Digite aqui a sua mensagem..." aria-label="text area" rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>                   
+                </form>
+
+                <form class="col-md-6">
+                    <h2>Pessoa Jurídica</h2>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nome da Empresa" aria-label="Nome Completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="cnpj" pattern="\d{2}.\d{3}.\d{3}/\d{4}-\d{2}"title="Digite no formato 11.222.333/0001-22" onmouseout="formataCNPJ(this)"onblur="return validaCnpj(this)" placeholder="CNPJ" required>                       
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="E-mail" aria-label="Email" data-error="Este email é inválido" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Telefone" atia-label="Telefone" pattern="([0-9]{2})([9])[0-9]{4,6}[0-9]{3,4}$" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Digite aqui a sua mensagem..." aria-label="text area" rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>                   
+                </form>
+            </div>
+        </main>
+    </div>
+    
+        <footer>
+            <h5>LOTUS Engenharia &copy;2021 | Todos os direitos reservados</h5>
+            <p>
+                <a href=""><img src="/imagens/fb.png"/></a>
+                <a href=""><img src="/imagens/insta.png"/></a>
+                <a href=""><img src="/imagens/tt.png"/></a>
+            </p>
+        </footer>
+
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+    <script src="/jquery-3.6.0.min.js"></script> 
+    <script src="/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script> <!-- A ORDEM TÁ CERTA?-->
+    <script>
+    
+    </script> 
+</body>
+</html>

@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root {
+    --corAzul: #0275d8;
+    /* #436cdf */
+    --cinzaClaro: #f8f8f8;
+}
+
+body {
+    background-color: var(--cinzaClaro);
+}
+
+/* media queries responsividade */
+@media (min-width:320px) { 
+    nav .container-fluid {
+        background-color: #0274d8af;
+    }
+    #logolotus {
+        margin-left: -48px;
+    }
+}
+
+@media (min-width:300px) and (max-width: 767.5px){ 
+    nav .container-fluid {
+        background-color: #0274d8af;
+    }
+    #logolotus {
+        margin-left: -48px;
+    }
+    h1 {
+        padding-top: 200px;
+    }
+}
+
+@media (min-width:768px) { 
+    nav .container-fluid {
+        font-size: 10px;   
+    }
+    .d-flex {
+        width: 100px;
+    }
+    #logolotus {
+        width: 140px;
+        margin-left: -48px;
+    }
+    h1 {
+        font-size:1.2rem;
+    }
+    .pservico p {
+        font-size: 1.0rem; 
+    }
+    .pservico {
+        display: flex;
+        flex-direction: column;
+    }
+    .pservico svg{
+        width: 25px;
+    }
+}
+
+@media (min-width:826px) and (max-width:992px) {
+    nav .container-fluid {
+        font-size: 12px;
+    }
+    .d-flex {
+        width: 120px;
+    }
+    #logolotus {
+        width: 140px;
+        margin-left: -48px;
+    }
+    h1 {
+        font-size:1.5rem;
+    }
+}
+
+@media (min-width:993px) and (max-width:1280px) { 
+    #logolotus {
+        width: 140px;
+        margin-left: -48px;
+    }
+    h1 {
+        font-size:1.8rem;
+    }
+    .pservico p {
+        font-size: 0.9rem;
+        line-height: 1;         
+    }
+    .pservico svg{
+        width: 30px;
+    }
+} 
+
+@media (min-width:1281px) { 
+    #logolotus {
+        width: 140px;
+        margin-left: -48px;
+    }  
+    nav ul {
+        margin-left: 150px;
+    }
+    nav .container-fluid {
+        font-size: 1rem;
+    }
+    .d-flex {
+        width: 150px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .pservico p {
+        font-size: 1.1rem;      
+    }
+    .pservico svg{
+        width: 40px;
+    }
+}
+
+@media (min-width: 1300px) {
+    nav ul {
+        margin-left: 400px;
+    }
+}
+
+/* MENU DE NAVEGAÇÃO */
+nav {
+    height: 15vh;
+    background-color: var(--corAzul);
+    font-size: 1rem;
+}
+
+nav img {
+    width: 22%;
+}
+
+#servicos{
+    border-bottom: 2px solid white;
+}
+
+#inicio:hover, #quemsomos:hover, #servicos:hover, #orcamento:hover {
+    font-size: 1.2rem;
+}
+
+/* main */
+main p {
+    font-size: 1.1rem; 
+    line-height: 0.2;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    height: 15vh;
+    background-color: var(--corAzul);
+    text-align: center;
+    padding: 20px;
+}
+
+footer img {
+    width: 3%;
+    padding-top: 5px;
+    padding-right: 4px;
+    padding-left: 4px;
+}

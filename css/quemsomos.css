@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root {
+    --corAzul: #0275d8;
+    /* #436cdf */
+    --cinzaClaro: #f8f8f8;
+}
+
+body {
+    background-color: var(--cinzaClaro);
+}
+
+/* media queries responsividade */
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android)  */
+    nav .container-fluid {
+        background-color: #0274d8af;
+    }
+    #logolotus {
+        margin-left: -48px;
+    }
+}
+
+@media (min-width:300px) and (max-width: 767.5px){ 
+    nav .container-fluid {
+        background-color: #0274d8af;
+    }
+    #logolotus {
+        margin-left: -48px;
+    }
+    h1 {
+        padding-top: 200px;
+    }
+}
+
+@media (min-width:768px) and (max-width:826px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    nav .container-fluid {
+        font-size: 10px;   
+    }
+    .d-flex {
+        width: 100px;
+    }
+    #logolotus {
+        width: 140px;
+        margin-left: -48px;
+    }
+}
+
+@media (min-width:826px) and (max-width:992px) {
+    nav .container-fluid {
+        font-size: 12px;
+    }
+    .d-flex {
+        width: 120px;
+    }
+    #logolotus {
+        width: 140px;
+        margin-left: -48px;
+    }
+}
+
+@media (min-width:993px){ /* big landscape tablets, laptops, and desktops */
+    #logolotus {
+        width: 140px;
+        margin-left: -48px;
+    }
+} 
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+    #logolotus {
+        width: 140px;
+        margin-left: -48px;
+    }  
+    nav ul {
+        margin-left: 150px;
+    }
+}
+
+@media (min-width: 1300px) {
+    nav ul {
+        margin-left: 400px;
+    }
+}
+
+/* MENU DE NAVEGAÇÃO */
+nav {
+    height: 15vh;
+    background-color: var(--corAzul);
+    font-size: 1rem;
+}
+
+nav img {
+    width: 22%;
+}
+
+#quemsomos{
+    border-bottom: 2px solid white;
+}
+
+#inicio:hover, #quemsomos:hover, #servicos:hover, #orcamento:hover {
+    font-size: 1.2rem;
+}
+
+/* main */
+main img {
+    width: 65%;
+}
+
+main p {
+    text-align: justify;
+    width: 95%;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin: 0 auto;
+}
+
+#p1 {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    
+}
+
+
+/* footer */
+footer {
+    height: 15vh;
+    background-color: var(--corAzul);
+    text-align: center;
+    padding: 20px;
+}
+
+footer img {
+    width: 3%;
+    padding-top: 5px;
+    padding-right: 4px;
+    padding-left: 4px;
+}

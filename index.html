@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- requisito jquery script na linha 164, requisito javascript no arquivo js (está com comentário de função pra validar cpf e função pra validar cnpj), requisito css no arquivo style.css (está com comentário de footer), requisito HTML aside e article nas linhas 59 e 64 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.css"/>
+    <title>Lótus Engenharia</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+                <span class="navbar-toggler-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list text-white" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a class="navbar-brand ml-5" href="#"><img src="imagens/logo.png" class="img-fluid" alt="logo LOTUS Engenharia" id="logolotus"/></a>
+                <ul class="navbar-nav navbar-static-top">
+                    <li class="nav-item mr-3">
+                        <a id="inicio" class="nav-link text-white" href="index.html"><strong>INÍCIO</strong></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a id="quemsomos" class="nav-link text-white" href="/html/quemsomos.html"><strong>QUEM SOMOS</strong></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                    <a id="servicos" class="nav-link text-white" href="/html/servicos.html"><strong>SERVIÇOS</strong></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                    <a id="orcamento" class="nav-link text-white" href="/html/formulario.html"><strong>SOLICITE SEU ORÇAMENTO</strong></a>
+                    </li>
+                </ul>       
+
+                <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Pesquise aqui..." aria-label="Search">
+                </form>
+            </div>
+        </div>
+      </nav>
+    
+        <div id="capa">
+            <img class="selected" src="imagens/capa.jpg" alt="engenheiro e placa solar"/>
+            <img src="imagens/capa1.jpg" alt="engenheiro apresentando projeto"/>
+            <img src="imagens/capa2.jpg" alt="painéis solares"/>
+            <img src="imagens/capa3.jpg" alt="pessoas trabalhando em uma placa solar"/>
+            <img src="imagens/capa4.jpg" alt="engenheiro segurando chapéu"/>
+        </div>
+
+        <div class="container">
+            <main>
+                <div class="row g-2">
+                    <h2 class="text-center col-md-12">	&bull; Lotus Engenharia | Projetos e Consultoria &bull;</h2>
+                    
+                    <aside class="col-md-6 mt-5 mb-5 text-center">
+                        <img src="imagens/inicial.jpg" alt="homem e mulher analisando um projeto"/>
+                    </aside>
+
+        
+                    <article class="col-md-6 mt-5 mb-5 text-center">
+                        <h3 class="text-justify">Desenvolvemos projetos de média e baixa tensão, realizamos consultorias, inspeções, laudos e parecer técnico nos campos da engenharia elétrica e de segurança do trabalho, atuando na área comercial, industrial, hospitalar, predial e residencial.</h3>
+
+                            <div class="row g-2 text-center mt-5 mb-5 legendaicones">
+                                <div class="row col-md-6 coluna1">
+                                    <a href="/html/servicos.html" class="col-md-12 mt-2">
+                                        <img id="icone1" src="imagens/project.png" alt="ícone de projetos" class="img-fluid"/>
+                                    </a>
+                                    <p class="col-md-12 mt-2">PROJETOS</p>
+                                </div>
+                                
+                                <div class="row col-md-6 coluna2">
+                                    <a href="html/servicos.html" class="col-md-12 mt-2">
+                                        <img id="icone2" src="imagens/consultor.png"  alt="ícone de consultoria" class="img-fluid"/>
+                                    </a>
+                                    <p class="col-md-12 mt-2">CONSULTORIAS</p>
+                                </div>
+                            </div>
+
+                    </article>                      
+                        <!-- direitos autorais dos ícones -->
+                        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                        <div>Ícones feitos por <a href="https://www.flaticon.com/br/autores/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div> -->                  
+                </div>
+
+                <div class="container-fluid text-center row conteudomain2">
+                    
+                    <h2 class="col-md-12 mt-5 mb-5">&bull; Principais Projetos &bull;</h2>
+
+                    <div class="col-md-4 text-center">
+                        <p class="col-md-12">
+                            <img src="imagens/iconesolar.png" alt="ícone painel solar"/> 
+                        </p>
+
+                        <p class="col-md-12">
+                            Sistema Solar Fotovoltaico
+                        </p>
+
+                        <div class="col-md-12 mb-5">
+                            <a href="html/servicos.html" target="_blank"><button type="submit" class="btn btn-primary p-2">SAIBA MAIS</button></a>
+                        </div>  
+                    </div>
+            
+                    <div class="col-md-4 text-center">
+                        <p class="col-md-12">
+                            <img src="imagens/iconeenergia.png" alt="ícone energia"/> 
+                        </p>
+
+                        <p class="col-md-12">
+                            Instalações Elétricas 
+                        </p>
+
+                        <div class="col-md-12 mb-5">
+                            <a href="html/servicos.html" target="_blank"><button type="submit" class="btn btn-primary p-2">SAIBA MAIS</button></a>
+                        </div> 
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <p class="col-md-12">
+                            <img src="imagens/iconextintor.png" alt="ícone extintor de incêndio"/> 
+                        </p>
+
+                        <p class="col-md-12">
+                            Combate ao Incêndio 
+                        </p>
+                        
+                        <div class="col-md-12 mb-5">
+                            <a href="html/servicos.html" target="_blank"><button type="submit" class="btn btn-primary p-2">SAIBA MAIS</button></a>
+                        </div> 
+                    </div>               
+                </div>     
+
+                        <!-- direitos autorais dos icones
+                        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                        <div>Ícones feitos por <a href="https://www.flaticon.com/br/autores/phatplus" title="phatplus">phatplus</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>-->
+
+                <div id="imgorcamento" class="mb-5">
+                    <div id="imgorcamentofilha">
+                        <a href="/html/formulario.html" target="_blank" id="ah2" class="ah2">
+                            <h2 class="ah3">SOLICITE O SEU ORÇAMENTO</h2>
+                        </a>
+                    </div>
+                </div>
+        </div>
+
+        <a href="" class="scrollUp">
+            <i class="fa-fachevron-up"></i>  
+            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/></svg>         
+        </a>    
+
+        <footer>
+            <h5>LOTUS Engenharia &copy;2021 | Todos os direitos reservados</h5>
+            <p>
+                <a href=""><img src="/imagens/fb.png"/></a>
+                <a href=""><img src="/imagens/insta.png"/></a>
+                <a href=""><img src="/imagens/tt.png"/></a>
+            </p>
+        </footer>
+
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="jquery-3.6.0.min.js"></script> 
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script> <!-- A ORDEM TÁ CERTA?-->
+
+    <script>
+        const scrollUp = document.querySelector('.scrollUp');
+        window.addEventListener('scroll', () => {
+            if(window.pageYOffset > 400){
+            scrollUp.classList.add("active");
+
+            }else{
+                scrollUp.classList.remove("active")
+            }
+        })
+    </script> 
+</body>
+</html>
