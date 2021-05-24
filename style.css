@@ -216,7 +216,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../imagens/arquiteto.jpg');
+    background-image: url('imagens/arquiteto.jpg');
     height: 40vh;
     
 }
