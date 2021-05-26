@@ -34,6 +34,9 @@ body {
     h1 {
         padding-top: 200px;
     }
+    .imgfooter {
+        width: 30px;
+    }
 }
 
 @media (min-width:768px) and (max-width:826px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
@@ -135,7 +138,7 @@ footer {
 }
 
 footer img {
-    width: 3%;
+    width: 40px;
     padding-top: 5px;
     padding-right: 4px;
     padding-left: 4px;

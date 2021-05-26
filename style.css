@@ -25,6 +25,12 @@ body {
     }
 }
 
+@media (min-width: 300px) and (max-width: 720px) {
+    .imgfooter {
+        width: 30px;
+    }
+}
+
 @media (max-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
     h2 {
         font-size: 1.5rem;
@@ -280,7 +286,7 @@ footer {
 }
 
 footer img {
-    width: 3%;
+    width: 40px;
     padding-top: 5px;
     padding-right: 4px;
     padding-left: 4px;
