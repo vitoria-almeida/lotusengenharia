@@ -29,12 +29,24 @@ body {
     .imgfooter {
         width: 30px;
     }
+    .capa {
+        overflow: hidden;
+    }
+    .container {
+        margin-top: -50px;
+    }
+    .article {
+        margin-top: -80px;
+    }
+    .container-fluid {
+        margin-top: -80px;
+    }
+    .divorcamento {
+        margin-left: 200px;
+    }
 }
 
 @media (max-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-    h2 {
-        font-size: 1.5rem;
-    }
     article h3 {
         font-size: 1.0rem;
     }
@@ -43,6 +55,7 @@ body {
     }
     .coluna1 {
         width: 50%;
+        margin-left: 20px;
     }
     .coluna2 {
         width: 50%;
@@ -50,6 +63,7 @@ body {
     h5 {
         font-size: 1.0rem;
     }
+    
 } 
 
 @media (min-width:601px) and (max-width: 767.5px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
